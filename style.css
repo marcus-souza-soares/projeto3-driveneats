@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400&display=swap');
+
+/* ------------- TOPO --------------- */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #E5E5E5;
+    display: flex;
+}
+.topo {
+    background-color: #CF2B2B;
+    box-shadow: 0 4px 3px #b3b3b3;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.titulo > h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+.titulo > h3{
+    font-family: 'Roboto', cursive;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+/*--------------CONTEUDO -----------------*/
+.pedidos {
+    margin: 112px 0;
+    padding-left: 10px;
+    width: 100%;
+    z-index: 2;
+}
+.pratos {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    z-index: 1;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.pratos img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+.pratos h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+} 
+.pratos h2 {
+
+}
+.pratos h3 {
+
+}
+.frango {
+    padding: 15px 10px;
+    border-radius: 9px;
+    margin: 0 10px;
+    background-color: #FFFFFF;
+}
