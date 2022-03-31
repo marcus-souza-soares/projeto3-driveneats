@@ -47,7 +47,7 @@ body {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-.pratos {
+.pratos, .bebidas, .sobremesas {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -57,31 +57,31 @@ body {
     display: none;
 }
 
-.pratos img {
+img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
 }
-.pratos h1 {
+.pratos h1, .bebidas h1, .sobremesas h1 {
     margin: 5px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
 } 
-.pratos h3 {
+.pratos h3, .bebidas h3, .sobremesas h3 {
     margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: #a6a6a6;
 }
-.pratos h2 {
+.pratos h2, .bebidas h2, .sobremesash2 {
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
-.item {
+.comida, .bebida, .sobremesa {
     padding: 15px 10px;
     border-radius: 9px;
     margin-right: 15px;
