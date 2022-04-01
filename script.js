@@ -1,10 +1,15 @@
 let preco_prato;
 let preco_bebida;
 let preco_sobremesa;
+
+let pedidoprato
+let pedidobebida
+let pedidosobremesa
+
 let total;
+let texto;
 
-
-function mudarBordaprato(elemento){
+function mudarBordaprato(elemento, prato){
     const verde = document.querySelector(".bordaverdeprato");
     const aparece = document.querySelector(".displaymostrarprato");
     const check = document.querySelector( "#" + elemento.id + " > ion-icon")
@@ -14,14 +19,14 @@ function mudarBordaprato(elemento){
     }
     elemento.classList.add("bordaverdeprato");
     check.classList.add("displaymostrarprato");
-    let pedido = elemento.id;
+    pedidoprato = prato;
     preco_prato = document.querySelector("#" + elemento.id + "  .precoprato").innerHTML
     preco_prato = parseFloat(preco_prato)
-    alert(pedido);
+    alert(pedidoprato);
     fecharpedidoVerde();
 }
 
-function mudarBordabebida(elemento){
+function mudarBordabebida(elemento, prato){
     const verde = document.querySelector(".bordaverdebebida");
     const aparece = document.querySelector(".displaymostrarbebida");
     const check = document.querySelector( "#" + elemento.id + " > ion-icon")
@@ -33,8 +38,8 @@ function mudarBordabebida(elemento){
     check.classList.add("displaymostrarbebida");
     preco_bebida = document.querySelector("#" + elemento.id + " .precobebida").innerHTML
     preco_bebida = parseFloat(preco_bebida)
-    let pedido = elemento.id;
-    alert(pedido);
+    pedidobebida = prato;
+    alert(pedidobebida);
     fecharpedidoVerde();
 }
 
@@ -50,13 +55,11 @@ function mudarBordasobremesa(elemento){
     check.classList.add("displaymostrarsobremesa");
     preco_sobremesa = document.querySelector("#" + elemento.id + " .precosobremesa").innerHTML
     preco_sobremesa = parseFloat(preco_sobremesa)
-    let pedido = elemento.id;
-    alert(pedido);
+    pedidosobremesa = elemento.id;
+    alert(pedidosobremesa);
     fecharpedidoVerde();
 }
 
-
-total = preco_bebida + preco_prato + preco_sobremesa;
 
 function fecharpedidoVerde() {
     if ((typeof preco_prato === 'number') && (typeof preco_bebida === 'number') && (typeof preco_sobremesa === 'number')){
@@ -66,10 +69,20 @@ function fecharpedidoVerde() {
 // botao de pedido
 function fecharpedido() {
     if ((typeof preco_prato === 'number') && (typeof preco_bebida === 'number') && (typeof preco_sobremesa === 'number')){
-        alert("vamos seguir");
-        document.querySelector(".fecha-pedido").style.background = "green";
+        total = preco_bebida + preco_prato + preco_sobremesa;
+        total = total.toFixed(2);
+        preco_prato = preco_prato.toFixed(2);
+        preco_bebida = preco_bebida.toFixed(2);
+        preco_sobremesa = preco_sobremesa.toFixed(2);
+        texto = "Olá, gostaria de fazer um pedido: " + "\n" +
+        " - Prato: "+ pedidoprato + "\n" +
+        "- Bebida: " + pedidobebida + "\n" +
+        " - Sobremesa: " + pedidosobremesa + "\n" +
+        "Total: R$ " + total;
+        texto = encodeURIComponent(texto)
+        window.open("https://wa.me/+5573999340124?text=" + texto);
     } else {
-        alert("o pedido ainda nao esta pronto");
+        alert("Por favor, selecione as 3 opções!");
     }
 }
 
