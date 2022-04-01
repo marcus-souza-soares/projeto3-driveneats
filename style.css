@@ -10,6 +10,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+.displaymostrarprato, .displaymostrarbebida, .displaymostrarsobremesa  {
+    display: block;
+}
 .topo {
     background-color: #CF2B2B;
     box-shadow: 0 4px 3px #b3b3b3;
@@ -52,6 +55,7 @@ body {
     flex-direction: row;
     overflow-x: scroll;
     z-index: 1;
+    height: 100%;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -62,7 +66,7 @@ img {
     height: 87px;
     border-radius: 4px;
 }
-.pedidos #check{
+ion-icon{
     height: 15px;
     width: 15px;
     position: absolute;
@@ -95,6 +99,8 @@ img {
     margin-right: 15px;
     background-color: #FFFFFF;
     position: relative;
+    height: 216px;
+    box-sizing: border-box;
 }
 .rodape {
     display: flex;
@@ -122,4 +128,7 @@ img {
     font-family: 'Roboto', regular;
     font-size: 20px;
     color: #FFFFFF;
+}
+.bordaverdeprato, .bordaverdebebida, .bordaverdesobremesa  {
+    border: 5px solid green;
 }

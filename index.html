@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>DrivenEats</title>
@@ -21,156 +21,122 @@
             <!--COMIDAS-->
             <h2>Primeiro, seu prato</h2>
             <div class="pratos">
-                <div id="Frango" class="comida" onClick="mudarBordapratos('Frango')">
+                <div id="Frango" class="comida" onClick="mudarBordaprato(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check"/>
+                    <h2>R$ <strong class="precoprato">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
                 </div>
 
-                <div id="Churrasco" class="comida" onClick="mudarBordapratos('Churrasco')">
+                <div id="Churrasco" class="comida" onClick="mudarBordaprato(this)">
                     <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2019/09/pontos-da-carne.jpg" alt=""/>
                     <h1>Churrascão</h1>
                     <h3>Carne a vontade</h3>
                     <h3>Acompanha pão de alho</h3>
-                    <h2>R$ 55,90</h2>
-                    <img src="check.png" id="check"/>
+                    <h2>R$ <strong class="precoprato">55.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
                 </div>
 
-                <div class="comida" id="Feijoada" onClick="mudarBordapratos('Feijoada')">
+                <div class="comida" id="Feijoada" onClick="mudarBordaprato(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg" alt=""/>
                     <h1>Feijoada</h1>
                     <h3>Melhor feijão da Bahia</h3>
                     <h3>Acompanha arroz</h3>
-                    <h2>R$ 25,50</h2>
-                    <img src="check.png" id="check"/>
+                    <h2>R$ <strong class="precoprato">25.50</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
                 </div>
 
-                <div id="Lasanha" class="comida" onClick="mudarBordapratos('Lasanha')">
+                <div id="Lasanha" class="comida" onClick="mudarBordaprato(this)">
                     <img src="https://cdn-caijk.nitrocdn.com/odlefrHlsAQchgWkXbLqZzXasZvKPRXm/assets/static/optimized/rev-9db51cc/wp-content/uploads/2020/09/lasanha-bolonhesa.png" alt=""/>
                     <h1>Lasanha Bolonesa</h1>
                     <h3>Delícia capixaba</h3>
                     <h3></h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check"/>
+                    <h2>R$ <strong class="precoprato">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+
                 </div>
             </div>
             <!--BEBIDAS-->
             <h2>Agora, sua bebida</h2>
             <div class="bebidas" >
-                <div class="bebida" id="Coca-lata" onclick="mudarBordabebidas('Coca-lata')">
-                    <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
-                    <h1>Fango Yin Yang</h1>
-                    <h3>Um pouco de salada</h3>
-                    <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                <div class="bebida" id="Coca-lata" onclick="mudarBordabebida(this)">
+                    <img src="https://www.botecogois.com.br/wp-content/uploads/2021/01/coca-lata.jpg" alt=""/>
+                    <h1>Colca lata de 350ml</h1>
+                    <h3>limão e gelo</h3>
+                    <h3></h3>
+                    <h2>R$ <strong class="precobebida">3.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="bebida" id="Suco" onclick="mudarBordabebidas('Suco')">
+                <div class="bebida" id="Suco" onclick="mudarBordabebida(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                    <h2>R$ <strong class="precobebida">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="bebida" id="Refresco" onclick="mudarBordabebidas('Refresco')">
+                <div class="bebida" id="Refresco" onclick="mudarBordabebida(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                    <h2>R$ <strong class="precobebida">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="bebida" id="Vinho" onclick="mudarBordabebidas('Vinho')">
+                <div class="bebida" id="Vinho" onclick="mudarBordabebida(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                    <h2>R$ <strong class="precobebida">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
             </div>
             <!--SOBREMESAS-->
             <h2>Por fim, sua sobremesa</h2>
             <div class="sobremesas">
-                <div class="sobremesa" id="Pudim" onclick="mudarBordasobremesas('Pudim')">
-                    <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
-                    <h1>Fango Yin Yang</h1>
-                    <h3>Um pouco de salada</h3>
-                    <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                <div class="sobremesa" id="Pudim" onclick="mudarBordasobremesa(this)">
+                    <img src="https://vovopalmirinha.com.br/wp-content/uploads/2016/06/pudim-1.jpg" alt=""/>
+                    <h1>Pudim de leite</h1>
+                    <h3>Apenas um pedaço</h3>
+                    <h3>Não vale repetir</h3>
+                    <h2>R$ <strong class="precosobremesa">1.50</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="sobremesa" id="Cocada doce" onclick="mudarBordasobremesas('Cocada doce')">
+                <div class="sobremesa" id="Cocada-doce" onclick="mudarBordasobremesa(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                    <h2>R$ <strong class="precosobremesa">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="sobremesa" id="Brigadeiro" onclick="mudarBordasobremesas('Brigadeiro')">
+                <div class="sobremesa" id="Brigadeiro" onclick="mudarBordasobremesa(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                    <h2>R$ <strong class="precosobremesa">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="sobremesa" id="Doce de leite" onclick="mudarBordasobremesas('Doce de leite')">
+                <div class="sobremesa" id="Doce-de-leite" onclick="mudarBordasobremesa(this)">
                     <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
                     <h1>Fango Yin Yang</h1>
                     <h3>Um pouco de salada</h3>
                     <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
-                </div>
-            </div>
-            <h2>Agora, sua bebida</h2>
-            <div class="bebidas">
-                <div class="sobremesa">
-                    <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
-                    <h1>Fango Yin Yang</h1>
-                    <h3>Um pouco de salada</h3>
-                    <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
-                </div>
-
-                <div class="sobremesa">
-                    <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
-                    <h1>Fango Yin Yang</h1>
-                    <h3>Um pouco de salada</h3>
-                    <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
-                </div>
-
-                <div class="sobremesa">
-                    <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
-                    <h1>Fango Yin Yang</h1>
-                    <h3>Um pouco de salada</h3>
-                    <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
-                </div>
-
-                <div class="sobremesa">
-                    <img src="https://cdn.panelinha.com.br/receita/1541599081530-receita-frango-assado.jpg" alt=""/>
-                    <h1>Fango Yin Yang</h1>
-                    <h3>Um pouco de salada</h3>
-                    <h3>Um pouco de batata</h3>
-                    <h2>R$ 14,90</h2>
-                    <img src="check.png" id="check">
+                    <h2>R$ <strong class="precosobremesa">14.90</strong></h2>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
             </div>
         </div>
@@ -181,6 +147,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
