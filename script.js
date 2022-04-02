@@ -22,7 +22,6 @@ function mudarBordaprato(elemento, prato){
     pedidoprato = prato;
     preco_prato = document.querySelector("#" + elemento.id + "  .precoprato").innerHTML
     preco_prato = parseFloat(preco_prato)
-    alert(pedidoprato);
     fecharpedidoVerde();
 }
 
@@ -39,7 +38,6 @@ function mudarBordabebida(elemento, prato){
     preco_bebida = document.querySelector("#" + elemento.id + " .precobebida").innerHTML
     preco_bebida = parseFloat(preco_bebida)
     pedidobebida = prato;
-    alert(pedidobebida);
     fecharpedidoVerde();
 }
 
@@ -56,7 +54,6 @@ function mudarBordasobremesa(elemento){
     preco_sobremesa = document.querySelector("#" + elemento.id + " .precosobremesa").innerHTML
     preco_sobremesa = parseFloat(preco_sobremesa)
     pedidosobremesa = elemento.id;
-    alert(pedidosobremesa);
     fecharpedidoVerde();
 }
 
@@ -68,6 +65,8 @@ function fecharpedidoVerde() {
 }
 // botao de pedido
 function fecharpedido() {
+    let endereco = prompt("Qual é o endereço de entrega? ")
+    let nome = prompt("Seu nome? ")
     if ((typeof preco_prato === 'number') && (typeof preco_bebida === 'number') && (typeof preco_sobremesa === 'number')){
         total = preco_bebida + preco_prato + preco_sobremesa;
         total = total.toFixed(2);
@@ -76,13 +75,13 @@ function fecharpedido() {
         preco_sobremesa = preco_sobremesa.toFixed(2);
         texto = "Olá, gostaria de fazer um pedido: " + "\n" +
         " - Prato: "+ pedidoprato + "\n" +
-        "- Bebida: " + pedidobebida + "\n" +
+        " - Bebida: " + pedidobebida + "\n" +
         " - Sobremesa: " + pedidosobremesa + "\n" +
-        "Total: R$ " + total;
+        "Total: R$ " + total + "\n" +
+        "Nome: " + nome + "\n" +
+        "Endereço: " + endereco;
         texto = encodeURIComponent(texto)
         window.open("https://wa.me/+5573999340124?text=" + texto);
-    } else {
-        alert("Por favor, selecione as 3 opções!");
-    }
+    } 
 }
 
