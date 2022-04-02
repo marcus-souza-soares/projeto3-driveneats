@@ -12,7 +12,7 @@ let texto;
 function mudarBordaprato(elemento, prato){
     const verde = document.querySelector(".bordaverdeprato");
     const aparece = document.querySelector(".displaymostrarprato");
-    const check = document.querySelector( "#" + elemento.id + " > ion-icon")
+    const check = document.querySelector( "#" + elemento.id + " > img.check")
     if (verde !== null){
         verde.classList.remove("bordaverdeprato");
         aparece.classList.remove("displaymostrarprato");
@@ -29,7 +29,7 @@ function mudarBordaprato(elemento, prato){
 function mudarBordabebida(elemento, prato){
     const verde = document.querySelector(".bordaverdebebida");
     const aparece = document.querySelector(".displaymostrarbebida");
-    const check = document.querySelector( "#" + elemento.id + " > ion-icon")
+    const check = document.querySelector( "#" + elemento.id + " > img.check")
     if (verde !== null){
         verde.classList.remove("bordaverdebebida");
         aparece.classList.remove("displaymostrarbebida");
@@ -46,7 +46,7 @@ function mudarBordabebida(elemento, prato){
 function mudarBordasobremesa(elemento){
     const verde = document.querySelector(".bordaverdesobremesa");
     const aparece = document.querySelector(".displaymostrarsobremesa");
-    const check = document.querySelector( "#" + elemento.id + " > ion-icon")
+    const check = document.querySelector( "#" + elemento.id + " > img.check")
     if (verde !== null){
         verde.classList.remove("bordaverdesobremesa");
         aparece.classList.remove("displaymostrarsobremesa");

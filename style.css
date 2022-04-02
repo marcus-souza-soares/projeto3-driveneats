@@ -10,9 +10,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.displaymostrarprato, .displaymostrarbebida, .displaymostrarsobremesa  {
-    display: block;
-}
+
 .topo {
     background-color: #CF2B2B;
     box-shadow: 0 4px 3px #b3b3b3;
@@ -66,7 +64,7 @@ img {
     height: 87px;
     border-radius: 4px;
 }
-ion-icon{
+.check {
     height: 15px;
     width: 15px;
     position: absolute;
@@ -131,4 +129,7 @@ ion-icon{
 }
 .bordaverdeprato, .bordaverdebebida, .bordaverdesobremesa  {
     border: 5px solid green;
+}
+.displaymostrarprato, .displaymostrarbebida, .displaymostrarsobremesa  {
+    display: block;
 }
