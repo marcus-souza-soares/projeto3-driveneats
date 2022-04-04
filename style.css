@@ -60,13 +60,17 @@ body {
 }
 
 img {
-    width: 144px;
+    height: 100%;
+    width: 100%;
+    min-width: 144px;
     height: 87px;
     border-radius: 4px;
 }
 .check {
-    height: 15px;
-    width: 15px;
+    width: 10.5%;
+    height: 0.8%;
+    min-height: 15px;
+    min-width: 15px;
     position: absolute;
     right: 10px;
     bottom: 10px;
